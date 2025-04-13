@@ -11,4 +11,10 @@ npm install --save-dev css-loader
 npm install --save-dev style-loader
 npm install sass-loader sass --save-dev
 
+npm install --save-dev mini-css-extract-plugin
+npm i react-router-dom@6.16.0
+npm install --save-dev webpack-bundle-analyzer
+npm install --save-dev @types/webpack-bundle-analyzer
+npm install --save-dev @svgr/webpack
+
 npm run start -- --env port=5000
