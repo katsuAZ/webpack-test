@@ -16,5 +16,7 @@ npm i react-router-dom@6.16.0
 npm install --save-dev webpack-bundle-analyzer@4.10.2
 npm install --save-dev @types/webpack-bundle-analyzer@4.7.0
 npm install --save-dev @svgr/webpack@8.1.0
+npm i fork-ts-checker-webpack-plugin@9.0.0
+npm i @pmmmwh/react-refresh-webpack-plugin@0.5.16
 
 npm run start -- --env port=5000

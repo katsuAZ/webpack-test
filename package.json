@@ -5,7 +5,10 @@
     "scripts": {
         "start": "webpack serve --open --env mode=development",
         "build:dev": "webpack --env mode=development",
-        "build:prod": "webpack --env mode=production"
+        "build:prod": "webpack --env mode=production",
+        "build:mobile": "webpack --env mode=development --env platform=mobile",
+        "build:desktop": "webpack --env mode=development --env platform=desktop",
+        "typecheck": "tsc"
     },
     "keywords": [],
     "author": "",
@@ -33,6 +36,8 @@
         "webpack-dev-server": "^5.2.1"
     },
     "dependencies": {
+        "@pmmmwh/react-refresh-webpack-plugin": "^0.5.16",
+        "fork-ts-checker-webpack-plugin": "^9.0.0",
         "react": "^19.1.0",
         "react-dom": "^19.1.0",
         "react-router-dom": "^6.16.0"

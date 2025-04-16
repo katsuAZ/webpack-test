@@ -1,14 +1,16 @@
 import { Configuration } from 'mini-css-extract-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import webpack from 'webpack';
+import webpack, { DefinePlugin } from 'webpack';
 import { BuildOptions } from './types/types';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 
 export function buildPlugins({
     mode,
     paths,
     analyzer,
+    platform,
 }: BuildOptions): Configuration['plugins'] {
     const isDev = mode === 'development';
     const isProd = mode === 'production';
@@ -17,10 +19,16 @@ export function buildPlugins({
         new HtmlWebpackPlugin({
             template: paths.html,
         }),
+        new DefinePlugin({
+            __PLATFORM__: JSON.stringify(platform),
+            __ENV__: JSON.stringify(mode),
+        }),
     ];
 
     if (isDev) {
         plugins.push(new webpack.ProgressPlugin());
+        // Вынсит проверку типов в отдельный процесс, не нагружая сборку
+        plugins.push(new ForkTsCheckerWebpackPlugin());
     }
 
     if (isProd) {
