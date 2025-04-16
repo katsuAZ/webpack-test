@@ -10,7 +10,6 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "description": "",
     "devDependencies": {
         "@svgr/webpack": "^8.1.0",
         "@types/node": "^22.14.0",
@@ -46,5 +45,6 @@
     "bugs": {
         "url": "https://github.com/katsuAZ/webpack-test/issues"
     },
-    "homepage": "https://github.com/katsuAZ/webpack-test#readme"
+    "homepage": "https://github.com/katsuAZ/webpack-test#readme",
+    "description": ""
 }

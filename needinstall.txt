@@ -2,8 +2,8 @@ npm init -y
 npm install --save-dev webpack@5.99.5
 npm install --save-dev webpack-cli@6.0.1
 npm i -D html-webpack-plugin@5.6.3
-npm install --save-dev typescript ts-loader@9.5.2
-npm install --save-dev typescript ts-node@10.9.2 @types/node@22.14.0 @types/webpack@5.28.5 @types/webpack-dev-server@4.7.1
+npm install --save-dev typescript@5.8.3 ts-loader@9.5.2
+npm install --save-dev typescript@5.8.3 ts-node@10.9.2 @types/node@22.14.0 @types/webpack@5.28.5 @types/webpack-dev-server@4.7.1
 npm install --save-dev webpack-dev-server@5.2.1
 npm install react@19.1.0 react-dom@19.1.0
 npm i -D @types/react@19.1.1 @types/react-dom@19.1.2
