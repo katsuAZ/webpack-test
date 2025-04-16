@@ -1,20 +1,20 @@
 npm init -y
-npm install --save-dev webpack
-npm install --save-dev webpack-cli
-npm i -D html-webpack-plugin
-npm install --save-dev typescript ts-loader
-npm install --save-dev typescript ts-node @types/node @types/webpack @types/webpack-dev-server
-npm install --save-dev webpack-dev-server
-npm install react react-dom
-npm i -D @types/react @types/react-dom
-npm install --save-dev css-loader
-npm install --save-dev style-loader
-npm install sass-loader sass --save-dev
+npm install --save-dev webpack@5.99.5
+npm install --save-dev webpack-cli@6.0.1
+npm i -D html-webpack-plugin@5.6.3
+npm install --save-dev typescript ts-loader@9.5.2
+npm install --save-dev typescript ts-node@10.9.2 @types/node@22.14.0 @types/webpack@5.28.5 @types/webpack-dev-server@4.7.1
+npm install --save-dev webpack-dev-server@5.2.1
+npm install react@19.1.0 react-dom@19.1.0
+npm i -D @types/react@19.1.1 @types/react-dom@19.1.2
+npm install --save-dev css-loader@7.1.2
+npm install --save-dev style-loader@4.0.0
+npm install sass-loader@16.0.5 sass@1.86.3 --save-dev
 
-npm install --save-dev mini-css-extract-plugin
+npm install --save-dev mini-css-extract-plugin@2.9.2
 npm i react-router-dom@6.16.0
-npm install --save-dev webpack-bundle-analyzer
-npm install --save-dev @types/webpack-bundle-analyzer
-npm install --save-dev @svgr/webpack
+npm install --save-dev webpack-bundle-analyzer@4.10.2
+npm install --save-dev @types/webpack-bundle-analyzer@4.7.0
+npm install --save-dev @svgr/webpack@8.1.0
 
 npm run start -- --env port=5000
