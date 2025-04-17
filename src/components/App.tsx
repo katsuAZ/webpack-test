@@ -39,12 +39,12 @@ export const App = () => {
             <div>
                 <Calendar width={100} height={100} className={classes.icon} />
             </div>
-            <Link to={'/about'}>about</Link>
+            <Link to={'/about'}>About</Link>
             <br />
-            <Link to={'/shop'}>shop</Link>
+            <Link to={'/shop'}>Shop</Link>
             <h1 className={classes.value}>{count}</h1>
             <button className={classes.button} onClick={increment}>
-                <span>Ещкере</span>
+                <span>Increment</span>
             </button>
             <Outlet />
         </div>
