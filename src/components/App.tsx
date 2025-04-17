@@ -46,7 +46,7 @@ export const App = () => {
             <button className={classes.button} onClick={increment}>
                 <span>Increment</span>
             </button>
-            <Outlet />
+            <About />
         </div>
     );
 };
