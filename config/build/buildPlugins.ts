@@ -1,20 +1,19 @@
-import { Configuration } from 'mini-css-extract-plugin';
+import webpack, {Configuration, DefinePlugin} from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import webpack, { DefinePlugin } from 'webpack';
-import { BuildOptions } from './types/types';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+import {BuildOptions} from './types/types';
+import {BundleAnalyzerPlugin} from 'webpack-bundle-analyzer';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import ReactRefreshPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import path from 'path';
 import CopyPlugin from 'copy-webpack-plugin';
 
 export function buildPlugins({
-    mode,
-    paths,
-    analyzer,
-    platform,
-}: BuildOptions): Configuration['plugins'] {
+                                 mode,
+                                 paths,
+                                 analyzer,
+                                 platform,
+                             }: BuildOptions): Configuration['plugins'] {
     const isDev = mode === 'development';
     const isProd = mode === 'production';
 
